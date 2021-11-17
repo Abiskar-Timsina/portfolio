@@ -1,0 +1,103 @@
+@font-face{
+	src: url(./../fonts/Neon.ttf);
+	font-family: title;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.global{
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+}
+
+.nav{
+	position: fixed;
+	width: 100vw;
+	height: 120px;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	z-index: 1;
+	display: flex;
+	transition: transform 5s ease-in;
+	transform: translateY(-100px);
+}
+
+.nav div, .nav a{
+	color: white;
+	display: flex;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: transform 50ms linear;
+}
+
+.nav div{
+	flex: 1;
+}
+
+.nav a:hover{
+	transform: scale(1.5);
+	text-shadow: 2px 2px black;
+}
+
+.landing{
+	height: 100vh;
+	background-image: linear-gradient(to bottom,#4A51B2,#B550AB);
+	scroll-snap-align: start;
+	background-color: #4A51B2;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+.landing .profile.pic img{
+	height: 75vh;
+	object-fit: contain;
+	border-radius: 75%;
+}
+
+.landing .name{
+	color: white;
+	font-family: title;
+	font-size: 120px;
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 124px;
+}
+
+.wave1 .shape-fill {
+    fill: #B550AB;
+}
+
+.intro{
+	position: relative;
+	height: 100vh;
+	scroll-snap-align: start;
+	background-image: linear-gradient(to bottom,#F65F8F,#FF896F);
+}
+
+.find{
+	height: 100vh;
+	scroll-snap-align: start;
+	background-color: #F65F8F;
+}
