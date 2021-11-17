@@ -29,14 +29,17 @@ let t = new TimelineMax();
 t.fromTo(pic,1,{height:"0%"},{height:"120%"})
 t.fromTo(pic,1,{height:"120%"},{height:"80%"})
 
-setTimeout(()=> {console.log(str)},2000)
+setTimeout(()=> {console.log(str)})
+
 /*Type writer animation*/
-let name = document.getElementsByClassName("name")[0].innerHTML
+let name = "I'm Abiskar Timsina"
 name = name.split(" ")
 let str = new String();
 
 name.forEach(word =>{
 	str += word + " ";
-	document.getElementsByClassName("name")[0].innerHTML = str
-	setTimeout(()=> {console.log(str)},2)
-})
+	setTimeout(()=> {	
+		document.getElementsByClassName("name")[0].innerHTML = str;
+		console.log(str)
+	},2500)
+});
