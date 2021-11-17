@@ -32,7 +32,7 @@ t.fromTo(pic,1,{height:"120%"},{height:"80%"})
 setTimeout(()=> {console.log(str)})
 
 /*Type writer animation*/
-let name = "I'm Abiskar Timsina"
+let name = "Hi, I'm Abiskar Timsina"
 name = name.split(" ")
 let str = new String();
 
@@ -41,5 +41,5 @@ name.forEach(word =>{
 	setTimeout(()=> {	
 		document.getElementsByClassName("name")[0].innerHTML = str;
 		console.log(str)
-	},2500)
+	},250)
 });
