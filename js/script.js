@@ -42,6 +42,30 @@
 	t.fromTo(pic,1,{height:"0%"},{height:"120%"})
 	t.fromTo(pic,1,{height:"120%"},{height:"80%"})
 
+	let k0 = KUTE.fromTo(
+	'#one',
+	{ path:'#four'},
+	{ path:"#one"},
+	{ repeat:999,duration:2000,yoyo:true},
+	)
+
+	let k1 = KUTE.fromTo(
+	'#two',
+	{ path:'#five'},
+	{ path:"#two"},
+	{ repeat:999,duration:4000,yoyo:true},
+	)
+
+	// let k2 = KUTE.fromTo(
+	// '#three',
+	// { path:'#six'},
+	// { path:"#three"},
+	// { repeat:999,duration:2000,yoyo:true},
+	// )
+
+	k0.start()
+	k1.start()
+	// k2.start()
 }
 /* Landing page loading animation */
 
