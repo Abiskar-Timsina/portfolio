@@ -41,17 +41,36 @@
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	transition: transform 50ms linear;
+	transition: transform 150ms linear;
+	position: relative;
 }
 
 .navigation.titles div{
 	flex: 1;
 }
 
-.navigation.titles a:hover{
-	transform: scale(1.5);
-	text-shadow: 2px 2px black;
+.navigation.titles a::after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: red;
+	transform: scaleX(0);
+	transition: transform 200ms ease-in;
 }
+
+.navigation.titles a:hover{
+	transform: scale(1.75);
+	text-shadow: 2px 2px white;
+}
+
+.navigation.titles a:hover::after{
+	background-color: red;
+	transform: scaleX(1);
+}
+
 .nav .dropdown.image{
 	flex: 1;
 	justify-content: space-between;

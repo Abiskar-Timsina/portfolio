@@ -1,5 +1,5 @@
 /* Nav Bar Animation*/
-	{
+{
 	let nav= document.getElementsByClassName("nav")[0]
 	let drop = document.getElementsByClassName("dropdown image")[0]
 
@@ -56,16 +56,8 @@
 	{ repeat:999,duration:4000,yoyo:true},
 	)
 
-	// let k2 = KUTE.fromTo(
-	// '#three',
-	// { path:'#six'},
-	// { path:"#three"},
-	// { repeat:999,duration:2000,yoyo:true},
-	// )
-
 	k0.start()
 	k1.start()
-	// k2.start()
 }
 /* Landing page loading animation */
 
