@@ -1,5 +1,9 @@
-let nav= document.getElementsByClassName("nav")[0]
 
+
+/* Nav Bar Animation*/
+let nav= document.getElementsByClassName("nav")[0]
+let drop = document.getElementsByClassName("dropdown image")[0]
+console.log(drop)
 
 nav.style.transition="transform 250ms ease-in";
 nav.style.transform="translateY(-10px)";
@@ -12,15 +16,17 @@ nav.style.transform="translateY(-100px)";
 nav.addEventListener("mouseover",e => {
 	nav.style.transition="transform 250ms ease-in";
 	nav.style.transform="translateY(-10px)";
+	drop.style.transform="rotate(180deg)"
 	e.stopPropagation();
 },{capture:true})
 
 nav.addEventListener("mouseout",e => {
 	nav.style.transition="transform 250ms ease-in";
 	nav.style.transform="translateY(-100px)"; 
+	drop.style.transform="rotate(0deg)"
 	e.stopPropagation();
 },{capture:true})
-
+/* Nav Bar animation end*/
 
 const pic = document.getElementsByClassName("landing")[0]
 
