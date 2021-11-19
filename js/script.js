@@ -42,10 +42,6 @@
 	t.fromTo(pic,1,{height:"0%"},{height:"120%"})
 	t.fromTo(pic,1,{height:"120%"},{height:"80%"})
 
-	// Socials animation
-	let socials = document.getElementsByClassName("socials")[0];
-	t.fromTo(socials,1,{height:"120%"},{height:"80%"})
-
 }
 /* Landing page loading animation */
 
