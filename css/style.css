@@ -24,6 +24,7 @@
 	height: 100vh;
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .nav{
@@ -100,6 +101,7 @@
 
 .landing{
 	height: 100vh;
+	width: 100vw;
 	background-image: linear-gradient(to bottom,var(--first-page-background),var(--first-page-bottom-background));
 	scroll-snap-align: start;
 	display: flex;
@@ -107,7 +109,10 @@
 	justify-content: space-evenly;
 	flex-direction: row;
 	overflow: hidden;
-	padding: 1%;
+}
+
+#tag, .landing .name,.landing .short{
+	padding: 0%;
 }
 
 #tag{
