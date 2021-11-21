@@ -81,7 +81,7 @@
 
 .navigation.titles a:hover{
 	transform: scale(1.5);
-	text-shadow: 2px 2px white;
+	text-shadow: 2px 2px black;
 }
 
 .navigation.titles a:hover::after{
@@ -320,7 +320,7 @@
 
 .navigation.titles a:hover{
 	transform: scale(1.1);
-	text-shadow: 2px 2px white;
+	text-shadow: 2px 2px black;
 }
 
 .navigation.titles a:hover::after{
