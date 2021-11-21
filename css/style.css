@@ -175,6 +175,26 @@
 	background-image: linear-gradient(to bottom,var(--second-page-background),var(--second-page-bottom-background));
 }
 
+.intro .about.me.title{
+	position: relative;
+	color: #FAB057;
+	top: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.intro .about.me.body{
+	color: white;
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
+	font-weight: 500;
+	font-size: 20px;
+	width: 75%;
+	border: 4px solid black;
+}
 .wave2 {
     position: absolute;
     top: 0;
@@ -200,4 +220,25 @@
 	height: 100vh;
 	scroll-snap-align: start;
 	background-color: var(--third-page-background);
+}
+
+.find .feedback.title{
+	position: relative;
+	color: #FAB057;
+	top: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.find .feedback.body{
+	color: white;
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
+	font-weight: 500;
+	font-size: 20px;
+	width: 75%;
+	border: 4px solid black;
 }
