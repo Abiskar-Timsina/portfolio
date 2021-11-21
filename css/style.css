@@ -3,6 +3,17 @@
 	font-family: title;
 }
 
+:root{
+	--nav-bar-top-color: #00325C;
+	--nav-bar-bottom-color: #0D0C3100;
+	--first-page-background: #0D0C31;
+	--first-page-bottom-background: #00325C;
+	--second-page-background: #0085A0;
+	--second-page-bottom-background: #00B0B1;
+	--third-page-background:#62DBBA ;
+	--third-page-bottom-background: ;
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -19,11 +30,17 @@
 	position: fixed;
 	width: 100vw;
 	height: 120px;
-	background-image: linear-gradient(to bottom,#B550AB80,#4A51B200);
+	background-image: linear-gradient(to bottom,var(--nav-bar-top-color),var(--nav-bar-bottom-color));
 	display: flex;
 	flex-direction: column;
 	z-index: 1;
 	align-items: center;
+}
+
+.navigation.titles .sign img{
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
 }
 
 .navigation.titles{
@@ -35,7 +52,7 @@
 }
 
 .navigation.titles div, .navigation.titles a{
-	color: black;
+	color: white;
 	display: flex;
 	font-size: 25px;
 	align-items: center;
@@ -83,9 +100,9 @@
 
 .landing{
 	height: 100vh;
-	background-image: linear-gradient(to bottom,#4A51B2,#B550AB);
+	background-image: linear-gradient(to bottom,var(--first-page-background),var(--first-page-bottom-background));
 	scroll-snap-align: start;
-	background-color: #4A51B2;
+/*	background-color: #4A51B2;*/
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -101,6 +118,7 @@
 }
 
 .landing .short{
+	color: white;
 	font-size: 20px;
 }
 
@@ -147,18 +165,39 @@
 }
 
 .wave1 .shape-fill{
-    fill: #B550AB;
+    fill: var(--first-page-bottom-background);
 }
 
 .intro{
 	position: relative;
 	height: 100vh;
 	scroll-snap-align: start;
-	background-image: linear-gradient(to bottom,#F65F8F,#FF896F);
+	background-image: linear-gradient(to bottom,var(--second-page-background),var(--second-page-bottom-background));
+}
+
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.wave2 .shape-fill {
+    fill: var(--second-page-bottom-background);
 }
 
 .find{
+	position: relative;
 	height: 100vh;
 	scroll-snap-align: start;
-	background-color: #F65F8F;
+	background-color: var(--third-page-background);
 }
