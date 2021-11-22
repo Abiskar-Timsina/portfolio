@@ -4,8 +4,8 @@
 	let drop = document.getElementsByClassName("dropdown image")[0]
 
 	let animation_for_nav = "transform 250ms ease-in";
-	let translate_upwards = "translateY(-100px)";
-	let translate_downwards = "translateY(-10px)"
+	let translate_upwards = "translateY(-5vw)";
+	let translate_downwards = "translateY(-0.1vw)"
 
 	nav.style.transition= animation_for_nav;
 	nav.style.transform= translate_downwards;
