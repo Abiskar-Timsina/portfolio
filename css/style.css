@@ -254,7 +254,7 @@
 }
 
 
-@media only screen and (max-width: 320){
+@media only screen and (max-width: 320px){
 	*{
 		margin: 0px;
 		padding: 0px;
@@ -271,7 +271,7 @@
 	.nav{
 		position: fixed;
 		width: 100vw;
-		height: 50vw;
+		height: 5vw;
 		background-image: linear-gradient(to bottom,var(--nav-bar-top-color),var(--nav-bar-bottom-color));
 		display: flex;
 		flex-direction: column;

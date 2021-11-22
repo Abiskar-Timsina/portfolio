@@ -5,7 +5,7 @@
 
 	let animation_for_nav = "transform 250ms ease-in";
 	let translate_upwards = "translateY(-5vw)";
-	let translate_downwards = "translateY(-0.1vw)"
+	let translate_downwards = "translateY(-0.15vw)"
 
 	nav.style.transition= animation_for_nav;
 	nav.style.transform= translate_downwards;
