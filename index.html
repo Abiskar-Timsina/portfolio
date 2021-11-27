@@ -16,9 +16,9 @@
 		<div class="nav">
 			<div class="navigation titles">
 				<div class="sign"><img src="./img/signature.png" alt="signature"></div>
-				<div><a href="#landing-page">Home</a></div>
-				<div><a href="#intro-page">About</a></div> 
-				<div><a href="#find-page">Find me</a></div>
+				<div><a href="#landing-page"><img id="homeicon" src="./img/home.png"> Home</a></div>
+				<div><a href="#intro-page"><img id="infoicon" src="./img/info.png"> About</a></div> 
+				<div><a href="#find-page"><img id="findicon" src="./img/findme.png"> Find me</a></div>
 			</div>
 
 			<div class="dropdown image">
@@ -74,10 +74,18 @@
 
 				<div class="projects">
 					<div class="resume">
-						Resume form? placeholder<br>
-						<input type="email" name="resume_email" placeholder="email" style="align-self: center">
+						Resume form? placeholder
+						<div class="resume email">
+							<form>
+								<label>
+									<input type="email" name="resume_email" placeholder="Your Email" style="align-self: center">
+								</label>
+								<br>
+								<button type="submit">Submit</button>
+							</form>
+						</div>
 					</div>
-
+<!-- 
 					<div class="some projects">
 						Some
 						<div class="projects list">
@@ -87,7 +95,7 @@
 								<li>3</li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 
 				</div> 
 			</div>
@@ -108,19 +116,19 @@
 				<form class="feedback form" id="feedback_form">
 					<label>
 						Email:<br>
-						<input type="email" style="height: 2vw; width: 25vw;" id="feedback_email" name="email" placeholder="Email Address" required>
+						<input type="email" id="feedback_email" name="email" placeholder="Email Address" required>
 					</label>
 
 					<label>
 						Name:<br>
-						<input type="text" style="height: 2vw; width: 25vw;" id="feedback_name" name="name" placeholder="Your Name" required>
+						<input type="text" id="feedback_name" name="name" placeholder="Your Name" required>
 					</label>
 
 					<label>
 						Feedback:
-						<textarea style="height: 10vw; width: 25vw;" type="text" id="feedback_comment" name="comment" required> </textarea>
+						<textarea type="text" id="feedback_comment" name="comment" required> </textarea>
 					</label>
-					<button type="submit">Submit</button>
+					<button id="feedback btn" type="submit">Submit</button>
 				</form>
 
 				<div class="success">

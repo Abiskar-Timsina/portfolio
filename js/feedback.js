@@ -10,7 +10,6 @@
 
 		if (comment.value === " " || comment.value === null){
 			unsuccessful(name.value)
-			form.reset()
 			e.preventDefault();
 		}
 		else{

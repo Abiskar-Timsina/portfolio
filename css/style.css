@@ -46,6 +46,14 @@
 	object-fit: contain;
 }
 
+#homeicon,#infoicon,#findicon{
+	height: 1vw;
+	width: 1vw;
+	filter: invert(100%);
+	object-fit: cover;
+	margin: 0.5vw;
+}
+
 .navigation.titles{
 	display: flex;
 	width: 100vw;
@@ -217,29 +225,52 @@
 	flex: 1;
 	top: 8vw;
 	align-items: center;
+	justify-content: center;
+	padding: 1vw;
 }
+
+.projects .resume{
+	color: red;
+	display: flex;
+	flex-direction: column;
+	gap: 1vw;
+}
+.projects .resume.email{
+	display: flex;
+	background-color: red;
+	border: 1px solid yellow;
+	align-items: center;
+}
+ .projects .resume.email form{
+ 	display: flex;
+ 	flex-direction: row;
+ 	align-items: center;
+ 	justify-items: center;
+ 	gap: 0.5vw;
+ }
+
+ .projects .resume.email button{
+ 	height: 2vw;
+ 	width: 5vw;
+ }
+
+.projects input{
+	width: 25vw;
+	height: 2vw;
+}
+.projects label{
+	color: black;
+	font-size: 1.5vw;
+}
+
 
 .projects .some.projects, .projects .projects.list{
 	color: #FAB057;
 	position: relative;
-	top: 0vw;
+	top: 0.1vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.intro .projects.list{
-	align-items: flex-start;
-	color: white;
-	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
-	font-weight: 500;
-	font-size: 1vw;
-	width: 75%;
-	border: 4px solid black;
-}
-
-.intro .resume{
-	color: red;
 }
 
 .wave2 {
@@ -300,6 +331,16 @@
 	gap: 0.1vw;
 }
 
+.feedback.form input{
+	height: 2vw; 
+	width: 25vw;
+}
+
+.feedback.form textarea{
+	height: 10vw;
+	width: 25vw;
+}
+
 .find .success{
 	display: flex;
 	position: relative;
@@ -314,3 +355,4 @@
 	transition: transform 100ms linear;
 	transform: scale(0);
 }
+
