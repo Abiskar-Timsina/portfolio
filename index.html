@@ -76,13 +76,14 @@
 					<div class="resume">
 						Resume form? placeholder
 						<div class="resume email">
-							<form>
+							<form id="resume_form">
 								<label>
-									<input type="email" name="resume_email" placeholder="Your Email" style="align-self: center">
+									<input type="email" name="resume_email" id="resume_email" placeholder="Your Email" style="align-self: center" required>
 								</label>
 								<br>
 								<button type="submit"><img src="./img/icons/submit.png" alt="Submit"></button>
 							</form>
+							<div class="resume_success"></div>
 						</div>
 					</div>
 				</div> 
@@ -119,8 +120,7 @@
 					<button id="feedback btn" type="submit"><img src="./img/icons/submit.png" alt="Submit"></button>
 				</form>
 
-				<div class="success">
-				</div>
+				<div class="success"></div>
 			</div>
 		</div>
 	</div>
