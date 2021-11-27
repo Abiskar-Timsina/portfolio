@@ -232,11 +232,9 @@
 
 .intro .about.me.body{
 	color: var(--text-font-color);
-	/*background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));*/
 	font-weight: 500;
 	font-size: 1vw;
 	width: 75%;
-	/*border: 0.5px solid black;*/
 	font-family: long;
 }
 
@@ -274,6 +272,12 @@
  .projects .resume.email button{
  	height: 2vw;
  	width: 5vw;
+ 	border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%;
+ }
+ .projects .resume.email img{
+ 	height: 1vw;
+ 	width: 1vw;
+ 	object-fit: cover;
  }
 
 .projects input{
@@ -354,13 +358,28 @@
 	width: 25vw;
 }
 
+.feedback.form button{
+	position: relative;
+	height: 2vw;
+	width: 5vw;
+	object-fit: cover;
+	left: 10vw;
+	border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%;
+}
+
+.feedback.form img{
+	height: 1vw;
+	width: 1vw;
+	object-fit: cover;
+}
+
 .find .success{
 	display: flex;
 	position: relative;
 	top: 0.1vw;
 	color: red;
 	background-color: green;
-	border-radius: 35% 28% 35% 34% / 50% 50% 0% 0% ;
+	border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%;
 	height: 2vw;
 	width: 50%;
 	font-size: 2vw;
