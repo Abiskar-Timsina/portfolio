@@ -22,12 +22,21 @@
 	--second-page-bottom-background: #00B0B1;
 	--third-page-background:#62DBBA ;
 	--third-page-bottom-background: ;
+
+	--first-page-font-color: #FAB057;
+	--text-font-color: #EAFCFF;
+	--second-page-title-color: #F89235;
+}
+
+::-webkit-scrollbar{
+	width: 0px;
 }
 
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	cursor: url("./../img/cursor/cursor.png"),auto;
 }
 
 .global{
@@ -51,7 +60,6 @@
 .navigation.titles .sign img{
 	height: 75%;
 	width: 20%;
-	/*border-radius: 50%;*/
 	border-radius: 0% 100% 0% 100% / 70% 32% 68% 30%;
 	object-fit: contain;
 }
@@ -137,7 +145,7 @@
 }
 
 #tag{
-	color: #FAB057;
+	color: var(--first-page-font-color);
 	font-size:5vw;
 }
 
@@ -149,7 +157,7 @@
 }
 
 .landing .short{
-	color: #E0D8EE;
+	color: white;
 	font-size: 1.15vw;
 	font-family: short;
 }
@@ -211,7 +219,7 @@
 
 .intro .about.me.title{
 	position: relative;
-	color: #FAB057;
+	color: var(--second-page-title-color);
 	top: 10vw;
 	display: flex;
 	justify-content: center;
@@ -223,12 +231,12 @@
 }
 
 .intro .about.me.body{
-	color: white;
-	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
+	color: var(--text-font-color);
+	/*background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));*/
 	font-weight: 500;
 	font-size: 1vw;
 	width: 75%;
-	border: 4px solid black;
+	/*border: 0.5px solid black;*/
 	font-family: long;
 }
 
@@ -245,7 +253,7 @@
 }
 
 .projects .resume{
-	color: red;
+	color: var(--second-page-title-color);
 	display: flex;
 	flex-direction: column;
 	gap: 1vw;
@@ -253,8 +261,6 @@
 }
 .projects .resume.email{
 	display: flex;
-	background-color: red;
-	border: 1px solid yellow;
 	align-items: center;
 }
  .projects .resume.email form{
@@ -274,19 +280,10 @@
 	width: 25vw;
 	height: 2vw;
 }
+
 .projects label{
-	color: black;
+	color: var(--text-font-color);
 	font-size: 1.5vw;
-}
-
-
-.projects .some.projects, .projects .projects.list{
-	color: #FAB057;
-	position: relative;
-	top: 0.1vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .wave2 {
@@ -318,7 +315,7 @@
 
 .find .feedback.title{
 	position: relative;
-	color: #FAB057;
+	color: #F89235;
 	top: 10vw;
 	display: flex;
 	justify-content: center;
@@ -329,7 +326,7 @@
 }
 
 .find .feedback.body{
-	color: white;
+	color: var(--text-font-color);
 	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
 	font-weight: 500;
 	font-size: 1vw;
@@ -338,7 +335,7 @@
 }
 
 .find .feedback.form{
-	color: black;
+	color: var(--text-font-color);
 	height: 20vw;
 	width: 25vw;
 	font-size: 1vw;
