@@ -7,20 +7,34 @@
 	let form_div = document.getElementsByClassName("feedback title")[0]
 
 	form.addEventListener('submit', e =>{
-		e.preventDefault();
-		console.log(email.value)
-		console.log(name.value)
-		console.log(comment.value)	
+
+		if (comment.value === " " || comment.value === null){
+			unsuccessful(name.value)
+			form.reset()
+			e.preventDefault();
+		}
+		else{
 		thanks(name.value);
 		form.reset()
+		e.preventDefault();
+		}
 	})
 
 	function thanks(username){
-		console.log(username)
-
 		let node = document.getElementsByClassName("success")[0]
 		node.style.transform = "scale(1.5)";
 		node.innerHTML = `Change this message from feedback.js, ${username}`
+
+		setTimeout(()=>{
+			node.style.transform = "scale(0)";
+		},2000)
+	}
+
+	function unsuccessful(username){
+		console.log("unsuccessful")
+		let node = document.getElementsByClassName("success")[0]
+		node.style.transform = "scale(1.5)";
+		node.innerHTML = ` No feedback?, chg feedback ${username}`
 
 		setTimeout(()=>{
 			node.style.transform = "scale(0)";

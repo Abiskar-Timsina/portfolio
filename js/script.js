@@ -57,14 +57,7 @@
 	{ repeat:999,duration:2500,yoyo:true},
 	)
 
-	// let k2 = KUTE.fromTo(
-	// 	'#three',
-	// 	{path:'#six'},
-	// 	{path:'#three'},
-	// 	{repeat:999,duration:4000,yoyo:true}
-	// )
-
-	let k3 = KUTE.fromTo(
+	let k2 = KUTE.fromTo(
 		"#w2_one",
 		{path:"#w2_two"},
 		{path:"#w2_one"},
@@ -74,8 +67,7 @@
 
 	k0.start()
 	k1.start()
-	// k2.start()
-	k3.start()
+	k2.start()
 }
 /* Landing page loading animation */
 
