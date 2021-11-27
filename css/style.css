@@ -1,6 +1,16 @@
 @font-face{
-	src: url(./../fonts/Neon.ttf);
+	src: url(./../fonts/title.ttf);
 	font-family: title;
+}
+
+@font-face{
+	src: url(./../fonts/short.ttf);
+	font-family: short;
+}
+
+@font-face{
+	src: url(./../fonts/long.otf);
+	font-family: long;
 }
 
 :root{
@@ -42,7 +52,7 @@
 	height: 75%;
 	width: 20%;
 	/*border-radius: 50%;*/
-	border-radius: 100% 0% 100% 0% / 70% 32% 68% 30%;
+	border-radius: 0% 100% 0% 100% / 70% 32% 68% 30%;
 	object-fit: contain;
 }
 
@@ -84,7 +94,7 @@
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	background-color: red;
+	background-color: #FAB057;
 	transform: scaleX(0);
 	transition: transform 200ms ease-in;
 }
@@ -95,7 +105,7 @@
 }
 
 .navigation.titles a:hover::after{
-	background-color: red;
+	background-color: #FAB057;
 	transform: scaleX(1);
 }
 
@@ -119,6 +129,7 @@
 	justify-content: space-evenly;
 	flex-direction: row;
 	overflow: hidden;
+	padding: 1vw;
 }
 
 #tag, .landing .name,.landing .short{
@@ -140,6 +151,7 @@
 .landing .short{
 	color: #E0D8EE;
 	font-size: 1.15vw;
+	font-family: short;
 }
 
 .landing .socials{
@@ -159,15 +171,16 @@
 
 .landing .socials img:hover{
 	transform: scale(1.5);
-	box-shadow: 2px 2px palegreen;
+	box-shadow: 2px 2px #FAB057;
 }
 
 .landing .profile.pic img{
 	height: 30vw;
 	object-fit: contain;
-	/*border-radius: 75%;*/
 	border-radius: 48% 52% 50% 50% / 24% 22% 78% 76%;
+	padding: 1vw;
 }
+
 
 .wave1{
     position: absolute;
@@ -206,6 +219,7 @@
 	font-size: 3vw;
 	flex-direction: column;
 	gap: 2vw;
+	font-family: short;
 }
 
 .intro .about.me.body{
@@ -215,6 +229,7 @@
 	font-size: 1vw;
 	width: 75%;
 	border: 4px solid black;
+	font-family: long;
 }
 
 .intro .projects{
@@ -234,6 +249,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1vw;
+	font-family: short;
 }
 .projects .resume.email{
 	display: flex;
