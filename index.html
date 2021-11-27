@@ -24,7 +24,6 @@
 			<div class="dropdown image">
 				<img src="./img/dropdownarrow.jpg" alt="drop"></img>
 			</div>
-
 		</div>
 
 		<div id ="landing-page" class="landing">
@@ -35,7 +34,7 @@
 				</div>
 				<div style="gap:50px;display: flex;gap:40px;flex-direction:column">
 					<div class="short">
-						Greetings and welcome! I'm a computer entusiast that loves anything and everything related to computers. If that interests you, come say hi at,      
+						Greetings and welcome! I'm a computer entusiast that loves anything and everything related to computers. If that's something we have in common, come say hi at:      
 					</div>
 
 					<div class="socials">
@@ -48,7 +47,6 @@
 			<div class="profile pic">
 				<img src="./img/mypic.jpg" alt="My Image"></img>
 			</div>
-
 		</div>
 
 		<div id="intro-page" class="intro">
@@ -67,14 +65,33 @@
 					</g>
 				</svg>
 			</div>
+
 			<div class="about me title">
 				More about me!
 				<div class="about me body">
-					I'm a junior year student at Institute of Engineering, Thapathali campus. I'm working towards getting my degree in Computer Engineering. I've worked in multiple disciplines of computer engineering ranging from embedded systems to desktop applications to face recognition through deep learning model. I'm mostly interested in things like
+					I'm a junior year student at Institute of Engineering, Thapathali campus. I'm working towards getting my bacherlor's degree in Computer Engineering. I've worked in multiple disciplines of computer engineering ranging from embedded systems to desktop applications to face recognition through deep learning models. I'm mostly interested in big data. I also love designing and making fully functional websites. 
 				</div>
+
+				<div class="projects">
+					<div class="resume">
+						Resume form? placeholder<br>
+						<input type="email" name="resume_email" placeholder="email" style="align-self: center">
+					</div>
+
+					<div class="some projects">
+						Some
+						<div class="projects list">
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+							</ul>
+						</div>
+					</div>
+
+				</div> 
 			</div>
 		</div>
-
 		<div id="find-page" class="find">
 			<div class="wave2">
 				<svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -88,9 +105,30 @@
 				<div class="feedback body">
 					gib feedback here, ok?
 				</div>
+				<form class="feedback form" id="feedback_form">
+					<label>
+						Email:
+						<input type="email" id="feedback_email" name="email" placeholder="email" required>
+					</label>
+
+					<label>
+						Name:
+						<input type="text" id="feedback_name" name="name" placeholder="Name" required>
+					</label>
+
+					<label>
+						Feedback:
+						<textarea style="height: 10vw; width: 25vw;"type="text" id="feedback_comment" name="comment" placeholder="Feedback" required> </textarea>
+					</label>
+					<button type="submit">Submit</button>
+				</form>
+
+				<div class="success">
+				</div>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/feedback.js"></script>
 </body>
 </html>
