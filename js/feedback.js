@@ -44,14 +44,16 @@
 	let email = document.getElementById("resume_email");
 	let resume_form = document.getElementById("resume_form")
 	let status = document.getElementsByClassName("resume_success")[0]
+	let status_message = document.getElementsByClassName("notification message")[0]
+	let notification_btn = document.getElementById("noti_close")
 
 	resume_form.addEventListener('submit',e =>{
 		e.preventDefault();
-		status.style.transform="scale(1.5)";
-		status.innerHTML = `Thanks for requesting a copy of my resume, it'll be delivered to ${email.value} shortly.`
-		setTimeout(()=>{
+		status.style.transform="scale(1)";
+		status_message.innerHTML= `A copy of my resume will be delivered to ${email.value} shortly. Thank you.`
+		notification_btn.addEventListener('click',()=>{
 			status.style.transform="scale(0)";
-		},4500)
+		})
 		resume_form.reset();	
 	}
 	)

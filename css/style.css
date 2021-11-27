@@ -292,7 +292,7 @@
  	object-fit: cover;
  }
 
-.projects .resume_success{
+/*.projects .resume_success{
 	display: flex;
 	position: relative;
 	top: 0.1vw;
@@ -305,6 +305,48 @@
 	justify-content: center;
 	transition: transform 100ms linear;
 	transform: scale(0);
+}*/
+
+.projects .resume_success{
+	display: flex;
+	position: absolute;
+	background-color: green;
+	border: 1px solid black;
+	height: 10vw;
+	width: 35vw;
+	font-size: 1vw;
+	justify-content: center;
+	transition: transform 250ms ease-in;
+	transform: scale(0);
+}
+
+.resume_success .left.edge{
+	flex: 0.5;
+}
+
+.resume_success .notification.title{
+	flex: 9;
+	background-color: white;
+	color: black;
+	font-size: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.resume_success .notification.title img{
+	position: absolute;
+	height: 2vw;
+	width: 2vw;
+	top: 1vw;
+	right: 8vw;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.resume_success .notification.message{
+	color: black;
+	font-size: 1vw;
 }
 
 .wave2 {
