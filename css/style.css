@@ -419,6 +419,7 @@
 }
 
 .find .feedback_success{
+	font-family: short;
 	display: flex;
 	position: absolute;
 	background-color: green;
@@ -429,7 +430,7 @@
 	font-size: 1vw;
 	justify-content: center;
 	transition: transform 250ms ease-in;
-	transform: scale(1);
+	transform: scale(0);
 }
 
 .feedback_success .feedback.left.edge{

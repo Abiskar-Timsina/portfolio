@@ -4,8 +4,6 @@
 	let comment = document.getElementById("feedback_comment")
 	let form = document.getElementById("feedback_form")
 
-	let form_div = document.getElementsByClassName("feedback title")[0]
-
 	form.addEventListener('submit', e =>{
 		e.preventDefault();
 		if (comment.value === " " || comment.value === null){
@@ -18,24 +16,32 @@
 		}
 	})
 
+	let status = document.getElementsByClassName("feedback_success")[0]
+	let status_message = document.getElementsByClassName("feedback notification message")[0]
+	let notification_btn = document.getElementById("feedback_btn_close")
+	let status_icon = document.getElementById("status_icon")
+	let title = document.getElementsByClassName("feedback notification title")[0]
+	
 	function thanks(username){
-		let node = document.getElementsByClassName("success")[0]
-		node.style.transform = "scale(1.5)";
-		node.innerHTML = `Change this message from feedback.js, ${username}`
-
-		setTimeout(()=>{
-			node.style.transform = "scale(0)";
-		},4500)
+		status.style.transform="scale(1)";
+		status_message.innerHTML= `A copy of my resume will be delivered to ${username} shortly. Thank you.`
+		notification_btn.addEventListener('click',()=>{
+			status.style.transform="scale(0)";
+		})
+		resume_form.reset();	
 	}
 
 	function unsuccessful(username){
-		let node = document.getElementsByClassName("success")[0]
-		node.style.transform = "scale(1.5)";
-		node.innerHTML = ` No feedback?, chg feedback ${username}`
+		status.style.backgroundColor = "red";
+		title.childNodes[0].nodeValue = "Task failed"
+		status_icon.src = "./img/icons/cross.png";
+		status.style.transform="scale(1)";
+		status_message.innerHTML= `A copy of my resume will be delivered to ${username} shortly. Thank you.`;
+		notification_btn.addEventListener('click',()=>{
+			status.style.transform="scale(0)";
+		})
+		resume_form.reset();	
 
-		setTimeout(()=>{
-			node.style.transform = "scale(0)";
-		},2000)
 	}
 }
 
