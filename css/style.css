@@ -292,21 +292,6 @@
  	object-fit: cover;
  }
 
-/*.projects .resume_success{
-	display: flex;
-	position: relative;
-	top: 0.1vw;
-	color: red;
-	background-color: #04d129B3;
-	border: 1px solid black;
-	height: 1.5vw;
-	width: 100%;
-	font-size: 1vw;
-	justify-content: center;
-	transition: transform 100ms linear;
-	transform: scale(0);
-}*/
-
 .projects .resume_success{
 	display: flex;
 	position: absolute;
@@ -334,6 +319,7 @@
 	justify-content: space-around;
 	align-items: center;
 }
+
 .resume_success .notification.title img{
 	position: absolute;
 	height: 2vw;
@@ -432,17 +418,47 @@
 	object-fit: cover;
 }
 
-.find .success{
+.find .feedback_success{
 	display: flex;
-	position: relative;
-	top: 0.1vw;
-	color: red;
+	position: absolute;
 	background-color: green;
-	border-radius: 10% 10% 10% 10% / 25% 25% 25% 25%;
-	height: 2vw;
-	width: 50%;
-	font-size: 2vw;
+	border: 1px solid black;
+	height: 10vw;
+	width: 35vw;
+	bottom: 0;
+	font-size: 1vw;
 	justify-content: center;
-	transition: transform 100ms linear;
-	transform: scale(0);
+	transition: transform 250ms ease-in;
+	transform: scale(1);
+}
+
+.feedback_success .feedback.left.edge{
+	flex: 0.5;
+}
+
+.feedback_success .feedback.notification.title{
+	flex: 9;
+	background-color: white;
+	color: black;
+	font-size: 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	top: 0;
+}
+
+.feedback_success .feedback.notification.title img{
+	position: absolute;
+	height: 2vw;
+	width: 2vw;
+	top: 1vw;
+	right: 8vw;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.feedback_success .feedback.notification.message{
+	color: black;
+	font-size: 1vw;
 }
