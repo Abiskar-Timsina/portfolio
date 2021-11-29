@@ -6,10 +6,10 @@
 
 	form.addEventListener('submit', e =>{
 		e.preventDefault();
+
 		if (comment.value === " " || comment.value === null){
 			unsuccessful(name.value)
 		}
-
 		else{
 			thanks(name.value);
 			form.reset();
@@ -23,25 +23,25 @@
 	let title = document.getElementsByClassName("feedback notification title")[0]
 	
 	function thanks(username){
+		status.style.backgroundColor = "green";
+		title.childNodes[0].nodeValue = "Successful"
+		status_icon.src = "./img/icons/check.png";
 		status.style.transform="scale(1)";
-		status_message.innerHTML= `A copy of my resume will be delivered to ${username} shortly. Thank you.`
+		status_message.innerHTML= `Thank you very much ${username}. Your feedback is highly appreciated.`
 		notification_btn.addEventListener('click',()=>{
 			status.style.transform="scale(0)";
 		})
-		resume_form.reset();	
 	}
 
 	function unsuccessful(username){
 		status.style.backgroundColor = "red";
-		title.childNodes[0].nodeValue = "Task failed"
+		title.childNodes[0].nodeValue = "Failed to Submit"
 		status_icon.src = "./img/icons/cross.png";
 		status.style.transform="scale(1)";
-		status_message.innerHTML= `A copy of my resume will be delivered to ${username} shortly. Thank you.`;
+		status_message.innerHTML= `Feedback field cannot be empty.`;
 		notification_btn.addEventListener('click',()=>{
 			status.style.transform="scale(0)";
 		})
-		resume_form.reset();	
-
 	}
 }
 
